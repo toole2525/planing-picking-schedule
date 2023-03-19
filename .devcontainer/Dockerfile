@@ -10,7 +10,7 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y libgl1-mesa-dev
 RUN pip install --upgrade pip
-RUN pip install opencv-python opencv-contrib-python
+RUN pip install opencv-python opencv-contrib-python japanize-matplotlib
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
